@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 16:53:37 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:20:29 by denysdudka       ###   ########.fr       */
+/*   Created: 2024/10/02 12:51:50 by denysdudka        #+#    #+#             */
+/*   Updated: 2024/10/06 19:04:06 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
-		return (1);
-	return (0);
-}
+	int	i;
 
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
+}
 // #include <stdio.h>
-// #include<ctype.h>
-// int main()
-// {
-//     printf("%d\n", ft_isalnum('3'));
-// 	printf("%d\n", isalnum('3'));
-// } 
+// void index_change(unsigned int index, char *c) {
+//     *c = *c + index;
+// }
+
+// int main() {
+//     char str[] = "abc";
+//     ft_striteri(str, index_change);
+//     printf("%s\n", str);
+//     return 0;
+// }

@@ -1,40 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 16:54:18 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 20:06:45 by denysdudka       ###   ########.fr       */
+/*   Created: 2024/10/05 15:24:51 by denysdudka        #+#    #+#             */
+/*   Updated: 2024/10/06 19:03:15 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned char	ch;
+	t_list	*elem;
 
-	ch = (unsigned char)c;
-	while (*s)
-	{
-		if (*s == ch)
-			return ((char *)s);
-		s++;
-	}
-	if (ch == '\0')
-		return ((char *)s);
-	return (NULL);
+	elem = malloc(sizeof(t_list));
+	if (!elem)
+		return (NULL);
+	elem->content = content;
+	elem->next = NULL;
+	return (elem);
 }
-// #include<stdio.h>
 // int main()
 // {
-// 	char str[] = "Find D character";
-// 	char *first_D = ft_strchr(str,'D');
-// 	char *first_D = strchr(str,'D');
-// 	if(first_D == NULL)
-// 	printf("There is no 'D' character");
-// 	else
-// 	printf("%s",first_D);
+//     char *data = "Hello, list!";
+//     t_list *new_node = ft_lstnew(data);
+
+//     if (new_node)
+//     {
+//         printf("Content: %s\n", (char *)new_node->content);
+//         free(new_node);
+//     }
+//     return 0;
 // }

@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 16:53:37 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:20:29 by denysdudka       ###   ########.fr       */
+/*   Created: 2024/10/05 15:24:40 by denysdudka        #+#    #+#             */
+/*   Updated: 2024/10/06 19:21:39 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
-{
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
-		return (1);
-	return (0);
-}
-
-// #include <stdio.h>
-// #include<ctype.h>
-// int main()
+// void	ft_lstdelone(t_list *lst, void (*del)(void *))
 // {
-//     printf("%d\n", ft_isalnum('3'));
-// 	printf("%d\n", isalnum('3'));
-// } 
+// 	del(lst->content);
+// 	free(lst);
+// }
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	t_list	*tmp;
+
+	while (*lst)
+	{
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = tmp;
+	}
+	free(*lst);
+	*lst = NULL;
+}
