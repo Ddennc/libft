@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:48 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:03:56 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:39 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,6 @@ char	**ft_split(char const *s, char c)
 	result[word_index] = NULL;
 	return (result);
 }
-// #include <stdio.h>
 // int main()
 // {
 //     int i = 0;

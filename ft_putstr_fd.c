@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:45 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:22:36 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:33 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	ft_putstr_fd(char *str, int fd)
 {
 	write(fd, str, ft_strlen(str));
 }
-// #include <stdio.h>
 // int main() {
 //     char str[] = "ABCDE";
 //     ft_putstr_fd(str, 1);

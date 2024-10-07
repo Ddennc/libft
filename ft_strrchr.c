@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:48 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 21:12:11 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:46 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_strrchr(const char *s, int c)
 		res = (char *)&s[i];
 	return (res);
 }
-// #include<stdio.h>
 // int main()
 // {
 // 	char str[] = "Find D character in D sentence";

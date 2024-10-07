@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:54 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:19:27 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:34:07 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-// #include <stdio.h>
-// #include <ctype.h>
-
 // int main()
 // {
 

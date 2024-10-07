@@ -6,23 +6,11 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:24:34 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:02:38 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:27:52 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// t_list	*ft_lstlast(t_list *lst)
-// {
-// 	t_list	*tmp;
-
-// 	if (!lst)
-// 		return (NULL);
-// 	tmp = lst;
-// 	while (tmp->next)
-// 		tmp = tmp->next;
-// 	return (tmp);
-// }
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -34,18 +22,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		last->next = new;
 }
-// t_list	*ft_lstnew(void *content)
-// {
-// 	t_list	*elem;
-
-// 	elem = malloc(sizeof(t_list));
-// 	if (!elem)
-// 		return (NULL);
-// 	elem->content = content;
-// 	elem->next = NULL;
-// 	return (elem);
-// }
-
 // int main()
 // {
 //     t_list *head = ft_lstnew("First");

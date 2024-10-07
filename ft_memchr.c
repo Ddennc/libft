@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:03 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 20:09:09 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:01 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// #include<stdio.h>
 // int main()
 // {
 // 	char str[] = "Find symbol S in string";

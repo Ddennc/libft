@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:24:37 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:02:45 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:30:43 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
 // int main()
 // {
 //     t_list *head = ft_lstnew("Second");

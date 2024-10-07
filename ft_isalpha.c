@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:56:18 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:19:42 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:29:03 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-// #include <stdio.h>
-// #include<ctype.h>
 // int main()
 // {
 //     printf("%d\n", ft_isalpha('H'));

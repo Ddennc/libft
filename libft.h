@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:19:05 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:19:09 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:30:18 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include <ctype.h>
 
 typedef struct s_list
 {

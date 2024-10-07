@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:53:47 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:02:00 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:28:24 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return ((void *)tmp);
 }
-// #include<stdio.h>
 // int main()
 // {
 // 	int counter1;

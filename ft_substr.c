@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:59 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:23:58 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:55 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	subs[counter] = '\0';
 	return (subs);
 }
-// #include<stdio.h>
 // int main()
 // {
 //     char src[] = "The string from which to create the substring";

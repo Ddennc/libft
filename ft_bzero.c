@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:53:44 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:01:55 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:28:18 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_bzero(void *buffer, size_t n)
 	}
 }
 
-// #include<stdio.h>
 // int main() {
 //     char buffer[10];
 //     ft_bzero(buffer,sizeof(char)*5);

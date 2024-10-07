@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:54 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:23:37 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:27 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[len] = '\0';
 	return (result);
 }
-// #include <stdio.h>
 // char index_change(unsigned int index, char c) {
 //     return c + index;
 // }

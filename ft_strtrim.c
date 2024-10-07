@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:57 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:04:41 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:50 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed_str[end - start] = '\0';
 	return (trimmed_str);
 }
-// #include <stdio.h>
 // int main()
 // {
 //     char s1[] = "  Hello World  ";

@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:07 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:03:29 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:04 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// #include<stdio.h>
 // int main()
 // {
 //     char str1[] = "This is the way";

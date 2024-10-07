@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:43 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:03:49 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:30 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
-// #include <stdio.h>
 // int main() {
 //     int n = 132421;
 //     ft_putnbr_fd(n, 1);

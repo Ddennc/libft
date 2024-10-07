@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:43 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 20:14:55 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:37 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-// #include<stdio.h>
 // int main()
 // {
 //     char str1[] = "This is the way";

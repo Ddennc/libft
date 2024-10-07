@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:23 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:35:54 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:51 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ char	*ft_strdup(const char *s1)
 	tmp_ptr[i] = '\0';
 	return (tmp_ptr);
 }
-// #include<stdio.h>
 // int main()
 // {
 // 	char str[] = "First string";

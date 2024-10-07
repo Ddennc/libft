@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:45 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:04:34 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:42 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
 // int main()
 // {
 // 	char str1[] = "Main sentence in which we search";

@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:53:37 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:20:29 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:28:57 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// #include <stdio.h>
-// #include<ctype.h>
 // int main()
 // {
 //     printf("%d\n", ft_isalnum('3'));

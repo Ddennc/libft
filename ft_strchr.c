@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:18 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 20:06:45 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:45 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-// #include<stdio.h>
 // int main()
 // {
 // 	char str[] = "Find D character";

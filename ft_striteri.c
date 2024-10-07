@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:50 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:04:06 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:32:58 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// #include <stdio.h>
 // void index_change(unsigned int index, char *c) {
 //     *c = *c + index;
 // }

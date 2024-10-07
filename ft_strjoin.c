@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:52 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/06 19:32:58 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:08 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[j] = '\0';
 	return (result);
 }
-// #include <stdio.h>
 // int main()
 // {
 // 	char str1[] = "Prefix and ";

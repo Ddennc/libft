@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:30 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 19:04:19 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:33:20 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 	i = strlen(src);
 	return (i);
 }
-//  #include <stdio.h>
 // int main() {
 //     char src[] = "Hello, World!";
 //     char dst[15]; 
