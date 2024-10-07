@@ -76,7 +76,16 @@ char	**ft_split(char const *s, char c)
 			start = i;
 		else if ((s[i] == c || s[i] == '\0') && start >= 0)
 		{
-			result[word_index++] = f_split(s, start, i);
+			result[word_index] = f_split(s, start, i);
+			if (result[word_index] == NULL)
+			{
+				i = 0;
+				while (i < word_index)
+					free(result[i++]);
+				free(result);
+				return (NULL);
+			}
+			word_index++;
 			start = -1;
 		}
 		i++;

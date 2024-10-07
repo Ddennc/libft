@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
+/*   By: ddudka <ddudka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:53:41 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/06 20:11:33 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 15:30:22 by ddudka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 // int main(void) {
-//     const char *s = "   01235506789ab567";
+//     const char *s = "-2147483648";
 //     printf("%d\n", ft_atoi(s)); 
 //     printf("%d\n", atoi(s));     
 //     return 0;
