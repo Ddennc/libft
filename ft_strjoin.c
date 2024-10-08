@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
+/*   By: ddudka <ddudka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:52 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/08 12:25:43 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 16:26:13 by ddudka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,23 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int			i;
-	int			j;
-	char		*result;
-	int			size1;
-	int			size2;
+	int		i;
+	int		j;
+	char	*tab;
 
-	if(!s1 || !s2)
-		return (NULL);
-	size1 = ft_strlen(s1);
-	size2 = ft_strlen(s2);
-	result = (char *) malloc(sizeof(char) * (size1 + size2) + 1);
-	if (!result)
+	if (!s1 || !s2)
 		return (NULL);
 	i = 0;
 	j = 0;
+	tab = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
+	if (!tab)
+		return (NULL);
 	while (s1[i])
-	{
-		result[j++] = s1[i++];
-	}
+		tab[j++] = s1[i++];
 	i = 0;
 	while (s2[i])
-	{
-		result[j++] = s2[i++];
-	}
-	result[j] = '\0';
-	return (result);
+		tab[j++] = s2[i++];
+	return (tab);
 }
 // int main()
 // {

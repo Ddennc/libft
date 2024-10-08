@@ -71,3 +71,10 @@ fclean:	clean
 re: fclean all
 
 .PHONY: all bonus clean fclean re
+
+
+# LIBFTDIR = /nfs/homes/ddudka/libft
+
+# so:
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS)
+# 	gcc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)

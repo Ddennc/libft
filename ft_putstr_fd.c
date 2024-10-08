@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
+/*   By: ddudka <ddudka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:45 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/08 12:26:30 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 16:42:21 by ddudka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
-	if(!str)
-		return;
+	if (!str)
+		return ;
 	write(fd, str, ft_strlen(str));
 }
 // int main() {

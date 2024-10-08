@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
+/*   By: ddudka <ddudka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:59 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/08 12:24:53 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 14:23:21 by ddudka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	counter;
 	char	*subs;
 
-	if(!s)
+	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
 	counter = 0 ;
