@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:45 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/07 11:33:42 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:13:53 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!haystack || !needle)
+		return (NULL);
 	if (!*needle)
 		return ((char *)haystack);
 	i = 0;

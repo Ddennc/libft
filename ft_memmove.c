@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:12 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/07 11:32:15 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 11:51:50 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char	*d;
 	unsigned char	*s;
 
-	if (dst == NULL)
+	if (!dst || !src)
 		return (NULL);
 	d = (unsigned char *) dst;
 	s = (unsigned char *) src;

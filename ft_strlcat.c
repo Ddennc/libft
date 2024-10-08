@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:54:26 by ddudka            #+#    #+#             */
-/*   Updated: 2024/10/07 11:33:13 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:09:12 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	size_t	src_len;
 	size_t	i;
 
+	if (!dst || !src)
+		return (0);
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	if (dstsize == 0)

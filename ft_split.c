@@ -6,92 +6,95 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:48 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/07 11:32:39 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/07 22:54:27 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_separator(char c, char d)
+int	safe_malloc(char **token_v, int position, size_t buffer)
 {
-	if (c == d)
+	int		i;
+
+	i = 0;
+	token_v[position] = malloc(buffer);
+	if (NULL == token_v[position])
+	{
+		while (i < position)
+			free(token_v[i++]);
+		free(token_v);
 		return (1);
+	}
 	return (0);
 }
 
-int	word_counter(char const *s, char c)
+int	fill(char **token_v, char const *s, char delimeter)
 {
-	int	i;
-	int	counter;
-	int	in_word;
+	size_t	len;
+	int		i;
 
 	i = 0;
-	counter = 0;
-	in_word = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (!is_separator(s[i], c) && !in_word)
+		len = 0;
+		while (*s == delimeter && *s)
+			++s;
+		while (*s != delimeter && *s)
 		{
-			counter++;
-			in_word = 1;
+			++len;
+			++s;
 		}
-		else if (is_separator(s[i], c))
-			in_word = 0;
-		i++;
+		if (len)
+		{
+			if (safe_malloc(token_v, i, len + 1))
+				return (1);
+			ft_strlcpy(token_v[i], s - len, len + 1);
+		}
+		++i;
 	}
-	return (counter);
+	return (0);
 }
 
-char	*f_split(char const *s, size_t start, size_t end)
+size_t	count_tokens(char const *s, char delimeter)
 {
-	char	*result;
-	size_t	i;
+	size_t	tokens;
+	int		inside_token;
 
-	i = 0;
-	result = malloc(sizeof(char) * (end - start + 1));
-	if (!result)
-		return (NULL);
-	while (start < end)
-		result[i++] = s[start++];
-	result[i] = '\0';
-	return (result);
+	tokens = 0;
+	while (*s)
+	{
+		inside_token = 0;
+		while (*s == delimeter && *s)
+			++s;
+		while (*s != delimeter && *s)
+		{
+			if (!inside_token)
+			{
+				++tokens;
+				inside_token = 42;
+			}
+			++s;
+		}
+	}
+	return (tokens);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		i;
-	int		start;
-	char	**result;
-	int		word_index;
+	size_t	tokens;
+	char	**token_v;
 
-	i = 0;
-	start = -1;
-	word_index = 0;
-	result = (char **)malloc(sizeof(char *) * (word_counter(s, c) + 1));
-	if (!result)
+	if (NULL == s)
 		return (NULL);
-	while (i <= (int)strlen(s))
-	{
-		if (s[i] != c && start < 0)
-			start = i;
-		else if ((s[i] == c || s[i] == '\0') && start >= 0)
-		{
-			result[word_index] = f_split(s, start, i);
-			if (result[word_index] == NULL)
-			{
-				i = 0;
-				while (i < word_index)
-					free(result[i++]);
-				free(result);
-				return (NULL);
-			}
-			word_index++;
-			start = -1;
-		}
-		i++;
-	}
-	result[word_index] = NULL;
-	return (result);
+	tokens = 0;
+	tokens = count_tokens(s, c);
+	token_v = malloc((tokens + 1) * sizeof(char *));
+	if (NULL == token_v)
+		return (NULL);
+	token_v[tokens] = NULL;
+	if (fill(token_v, s, c))
+		return (NULL);
+	return (token_v);
 }
 // int main()
 // {
