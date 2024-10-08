@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:24:40 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/07 11:30:52 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:28:53 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
+	if (!lst || !*lst || !del)
+		return;
 	t_list	*tmp;
 
 	while (*lst)

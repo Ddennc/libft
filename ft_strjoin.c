@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:52 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/07 11:33:08 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:25:43 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int			size1;
 	int			size2;
 
+	if(!s1 || !s2)
+		return (NULL);
 	size1 = ft_strlen(s1);
 	size2 = ft_strlen(s2);
 	result = (char *) malloc(sizeof(char) * (size1 + size2) + 1);

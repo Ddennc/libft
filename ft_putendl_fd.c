@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 12:51:41 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/07 21:10:57 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:26:57 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *str, int fd)
 {
+	if(!str)
+		return;
 	write(fd, str, ft_strlen(str));
 	write(fd, "\n", 1);
 }

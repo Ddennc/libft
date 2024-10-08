@@ -6,7 +6,7 @@
 /*   By: denysdudka <denysdudka@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:24:42 by denysdudka        #+#    #+#             */
-/*   Updated: 2024/10/07 11:31:04 by denysdudka       ###   ########.fr       */
+/*   Updated: 2024/10/08 12:27:24 by denysdudka       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 // }
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if(!lst || !del)
+		return;
 	del(lst->content);
 	free(lst);
 }
